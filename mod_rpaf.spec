@@ -15,7 +15,7 @@ rpaf is for backend Apache servers what mod_proxy_add_forward is for
 frontend Apache servers. It does excactly the opposite of
 mod_proxy_add_forward written by Ask Bjørn Hansen. It will also work
 with mod_proxy in Apache starting with release 1.3.25 and mod_proxy
-that is distributed with Apache2 from version 2.0.36.
+that is distributed with Apache2 from version 2.0.36 and 2.4.x.
 
 %prep
 %setup -q
