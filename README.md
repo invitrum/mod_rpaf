@@ -17,6 +17,10 @@ Sets `remoteip-proxy-ip-list` field in r->notes table to list of proxy intermedi
     yum install httpd-devel
     make
     make install
+    
+### Install rpm for RedHat/CentOS7
+
+    rpm -ivh mod_rpaf-0.8-1.x86_64.rpm
 
 ### Configuration Directives
 
