@@ -38,13 +38,15 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %{_sysconfdir}/httpd/conf.d/mod_rpaf.conf
 
 %post
-/usr/sbin/apxs -e -A -n rpaf $(apxs -q LIBEXECDIR)/mod_rpaf.so
+/usr/bin/apxs -e -A -n rpaf $(apxs -q LIBEXECDIR)/mod_rpaf.so
 
 %preun
-/usr/sbin/apxs -e -A -n rpaf $(apxs -q LIBEXECDIR)/mod_rpaf.so
-
+/usr/bin/apxs -e -A -n rpaf $(apxs -q LIBEXECDIR)/mod_rpaf.so
 
 %changelog
+* Mon May 18 2019 Bani Aguilera <invitrum at gmail.com> - 0.8
+- Fixed path to apxs.
+
 * Mon Nov 02 2015 Marc Teale <marc.teale@gmail.com> - 0.8
 - Update references to mod_rpaf.conf.
 
